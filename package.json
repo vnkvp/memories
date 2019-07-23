@@ -1,0 +1,23 @@
+{
+  "name": "memories",
+  "version": "1.0.0",
+  "description": "Simple social media",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Oswaldo Inacio",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "express": "*",
+    "express-handlebars": "*",
+    "express-session": "*",
+    "method-override": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-local": "*"
+  }
+}

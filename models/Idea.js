@@ -3,11 +3,16 @@ const Schema = mongoose.Schema;
 
 // Create Schema
 const IdeaSchema = new Schema({
-  title:{
+  image: {
+    data: Buffer,
     type: String,
     required: true
   },
-  details:{
+  title: {
+    type: String,
+    required: true
+  },
+  details: {
     type: String,
     required: true
   },

@@ -1,4 +1,35 @@
+nav {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 5vh;
+}
+footer {
+  text-align: center;
+  padding: 10vh;
+}
 .logo{
   width:130px;
   margin:auto;
+}
+.photogrid {
+  max-width: 970px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+  margin: 5vh auto;
+  border-top: 1px solid #ddd;
+  padding-top: 1vh;
+}
+.photogrid > div > a > img {
+  width: 100%;
+  height: 45vh;
+}
+
+@media screen and (max-width: 768px){
+  .photogrid{
+     width: 100%;
+     grid-gap: 5px;
+  }
+  .photogrid > div > a > img {
+     height: 28vh;
+  }
 }

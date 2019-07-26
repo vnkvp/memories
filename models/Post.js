@@ -2,9 +2,17 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 // Create Schema
-const IdeaSchema = new Schema({
+const PostSchema = new Schema({
   image: {
     data: Buffer,
+    type: String,
+    required: true
+  },
+  user: {
+    type: String,
+    required: true
+  },
+  username: {
     type: String,
     required: true
   },
@@ -22,4 +30,4 @@ const IdeaSchema = new Schema({
   }
 });
 
-mongoose.model('ideas', IdeaSchema);
+mongoose.model('posts', PostSchema);

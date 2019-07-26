@@ -11,7 +11,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 // Load routes
-const ideas = require('./routes/ideas');
+const posts = require('./routes/posts');
 const users = require('./routes/users');
 
 // Passport Config
@@ -21,7 +21,7 @@ require('./config/passport')(passport);
 mongoose.Promise = global.Promise;
 
 // Connect to mongoose
-mongoose.connect('mongodb://localhost/vidjot-dev', {
+mongoose.connect('mongodb://localhost/memories', {
   useMongoClient: true
 })
   .then(() => console.log('MongoDB Connected...'))
@@ -79,7 +79,7 @@ app.get('/about', (req, res) => {
 });
 
 // Use routes
-app.use('/ideas', ideas);
+app.use('/posts', posts);
 app.use('/users', users);
 
 const port = 1337;

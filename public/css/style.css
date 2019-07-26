@@ -3,6 +3,7 @@ nav {
   margin-bottom: 5vh;
 }
 footer {
+  display: block;
   text-align: center;
   padding: 10vh;
 }
@@ -23,7 +24,17 @@ footer {
   width: 100%;
   height: 45vh;
 }
-
+.feed {
+  max-width: 970px;
+  display: flex;
+  flex-direction: column;
+  margin: 5vh auto;
+  padding: 2vh;
+}
+.feed > div > a > img {
+  width: 50%;
+  height: 50vh;
+}
 @media screen and (max-width: 768px){
   .photogrid{
      width: 100%;

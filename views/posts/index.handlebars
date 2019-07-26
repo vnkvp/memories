@@ -6,14 +6,14 @@
 </div>
 {{/if}}
 <div class="photogrid">
-  {{#each ideas}}
+  {{#each posts}}
   <div>
     <a href="/uploads/{{image}}" data-lightbox="gallery"><img src="/uploads/{{image}}"></a>
     <h4>{{title}}</h4>
     <p>{{details}}</p>
     <div class="show">
-      <a class="btn btn-dark btn-block mb-2" href="/ideas/edit/{{id}}">Edit</a>
-      <form method="post" action="/ideas/{{id}}?_method=DELETE">
+      <a class="btn btn-dark btn-block mb-2" href="/posts/edit/{{id}}">Edit</a>
+      <form method="post" action="/posts/{{id}}?_method=DELETE">
         <input type="hidden" name="_method" value="DELETE">
         <input type="submit" class="btn btn-danger btn-block" value="Delete">
       </form>
@@ -23,7 +23,3 @@
   <p>No pictures listed</p>
   {{/each}}
 </div>
-<footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
-</footer>

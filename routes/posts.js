@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const router = express.Router();
 const multer = require('multer');
 const path = require('path');
-const {ensureAuthenticated} = require('../helpers/authenticate');
+const { ensureAuthenticated } = require('../helpers/authenticate');
 
 // Load Post Model
 require('../models/Post');
